@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>style.in</title>
+    <style>
+        body{
+            background: linear-gradient(to right, rgba(147,184,116,0), rgba(147,184,116,1));
+    }
+         h1{
+
+             text-align: center;
+             text-decoration: wavy;
+         }
+            h2{ background-color: blanchedalmond;
+                text-align: center;
+            }
+
+    </style>
+
+    <script type = "text/JavaScript">
+        <!--
+           function AutoRefresh( t ) {
+              setTimeout("location.reload(true);", t);
+           }
+        //-->
+     </script>
+
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body onload = "JavaScript:AutoRefresh(1000);">
+    <h1>{{ headline }}</h1>
+    <div>
+        
+        <h2> now the time is  {{time}} </h2>
+       <p>To know the date</p>
+       <a href="{{url_for('today_time')}}"> click here! </a>
+      
+    </div>
+</body>
+</html>
+
