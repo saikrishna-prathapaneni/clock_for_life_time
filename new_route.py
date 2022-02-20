@@ -18,4 +18,6 @@ def today_time():
     today=datetime.datetime.now()
     today_date=today.isocalendar()
     return render_template("more.html",today_date=today_date)
-    
+
+if __name__=="__main__":
+    app.run(host='0.0.0.0',port=8080)
